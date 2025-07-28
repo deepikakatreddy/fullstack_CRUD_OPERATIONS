@@ -1,0 +1,85 @@
+/* src/components/Sidebar.css */
+
+.sidebar {
+  background-color: #ffffff; /* White background */
+  min-height: 100vh;
+  width: 250px;
+  padding: 20px 10px;
+  transition: width 0.3s ease-in-out;
+  border-right: 1px solid #ddd;
+}
+
+/* Collapsed sidebar */
+.sidebar.collapsed {
+  width: 80px;
+  padding: 20px 5px;
+}
+
+/* Link structure */
+.sidebar-link {
+  display: flex;
+  flex-direction: row; /* Icon beside label */
+  align-items: center;
+  padding: 12px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Default colors */
+.sidebar-link .icon,
+.sidebar-link .label {
+  color: #4a4a4a;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Hover behavior */
+.sidebar-link:hover {
+  background-color: #e0edff; /* Light blue hover background */
+}
+
+.sidebar-link:hover .icon,
+.sidebar-link:hover .label {
+  color: #0f46bd; /* Blue-600 on hover */
+}
+
+/* Active link */
+.sidebar-link.active {
+  background-color: #bec9d7; /* Blue-100 */
+  font-weight: bold;
+}
+
+.sidebar-link.active .icon,
+.sidebar-link.active .label {
+  color: #4871c9;
+}
+
+/* Icon styling */
+.sidebar .icon {
+  font-size: 20px;
+  margin-right: 15px;
+  min-width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar.collapsed .icon {
+  margin-right: 0;
+}
+
+/* Label text */
+.sidebar .label {
+  white-space: nowrap;
+}
+
+.sidebar.collapsed .label {
+  display: none;
+}
+
+.sidebar.collapsed .sidebar-link {
+  justify-content: center;
+  flex-direction: column; /* Stack in collapsed mode */
+  align-items: center;
+}
