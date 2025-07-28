@@ -40,33 +40,33 @@ Each page uses structured **form elements**, styled with **React-Bootstrap**, an
 git clone https://github.com/your-username/fullstack_CRUD_OPERATIONS.git
 cd fullstack_CRUD_OPERATIONS
 
-##2.Backend Setup (Node.js + SQLite)
+### 2.Backend Setup (Node.js + SQLite)
 cd backend
 npm install
 node index.js
-## 3.Frontend Setup (React)
+### 3.Frontend Setup (React)
 cd frontend
 npm install
 npm start
 
-##output
+### 📸 Screenshots
+
 ### 🧩 Dashboard Overview  
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./frontend/screenshots/dashboard)
 
 ### 👤 User Profile  
-![User Profile](./screenshots/userprofile.png)
+![User Profile](./frontend/screenshots/userprofile)
 
 ### 👥 Users Page  
-![Users](./screenshots/users.png)
+![Users](./frontend/screenshots/users)
 
 ### 🔔 Notifications Settings  
-![Notifications](./screenshots/notifications.png)
+![Notifications](./frontend/screenshots/notifications)
 
 ### 💳 Billing & Invoices  
-![Billing](./screenshots/bills.png)
+![Billing](./frontend/screenshots/bills)
 
 ### 📦 Plans & Add-ons  
-![Plans](./screenshots/plans.png)
-
+![Plans](./frontend/screenshots/plans)
 
 
